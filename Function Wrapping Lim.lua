@@ -4,8 +4,8 @@ local Func = nil
 local Count = 0
 
 Func = function()
-	Count += 1
 	Func()
+	Count += 1
 end
 
 pcall(Func)
