@@ -5,8 +5,7 @@ local Count = 0
 
 Func = function()
 	Count += 1
-
-	return Func()
+	Func()
 end
 
 pcall(Func)
